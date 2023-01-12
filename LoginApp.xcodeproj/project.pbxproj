@@ -13,7 +13,6 @@
 		D2B323D1297054C100A0593F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2B323CF297054C100A0593F /* Main.storyboard */; };
 		D2B323D3297054C200A0593F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2B323D2297054C200A0593F /* Assets.xcassets */; };
 		D2B323D6297054C200A0593F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2B323D4297054C200A0593F /* LaunchScreen.storyboard */; };
-		D2B323E029705FD100A0593F /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B323DF29705FD100A0593F /* DashboardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +24,6 @@
 		D2B323D2297054C200A0593F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2B323D5297054C200A0593F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D2B323D7297054C200A0593F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D2B323DF29705FD100A0593F /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +70,6 @@
 			isa = PBXGroup;
 			children = (
 				D2B323CD297054C100A0593F /* FirstViewController.swift */,
-				D2B323DF29705FD100A0593F /* DashboardViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -160,7 +157,6 @@
 				D2B323CE297054C100A0593F /* FirstViewController.swift in Sources */,
 				D2B323CA297054C100A0593F /* AppDelegate.swift in Sources */,
 				D2B323CC297054C100A0593F /* SceneDelegate.swift in Sources */,
-				D2B323E029705FD100A0593F /* DashboardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
