@@ -9,8 +9,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var user = Users.getLoginAndPassword()
-
+    var user: Users!
+    
     @IBOutlet var passwordTF: UITextField!
     @IBOutlet var usernameTF: UITextField!
     
@@ -43,7 +43,7 @@ class ViewController: UIViewController {
     // MARK: Login button logic
     @IBAction func loginTapped() {
         // checking for correct login and password
-        guard usernameTF.text == user.login && passwordTF.text == user.password else {
+        guard checkLoginAndPassword(in: usersArray) else {
             // showing alert window if not correct
             showAlert(title: "Invalid login or password", message: "Please enter correct login and password")
             passwordTF.text = nil
@@ -63,6 +63,19 @@ class ViewController: UIViewController {
         // erasing text in text fields after returning
         usernameTF.text = nil
         passwordTF.text = nil
+    }
+    
+    // MARK: Checking for valid username and password in users array
+    func checkLoginAndPassword(in array: [Users]) -> Bool {
+        for user in array {
+            if usernameTF.text == user.login {
+                if passwordTF.text == user.password {
+                    self.user = user
+                    return true
+                }
+            }
+        }
+        return false
     }
     
 }

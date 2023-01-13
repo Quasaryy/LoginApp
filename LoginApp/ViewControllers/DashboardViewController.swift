@@ -16,7 +16,7 @@ class DashboardViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        userNameLabel.text! += user.login + " !"
+        userNameLabel.text! += user.login + "!"
     }
 
 }

@@ -9,9 +9,6 @@ struct Users {
     var login: String
     var password: String
     var person: Person
-    static func getLoginAndPassword() -> Users {
-        Users(login: "User", password: "password", person: Person(fName: "John", lName: "Appleseed"))
-    }
 }
 
 struct Person {
@@ -21,3 +18,8 @@ struct Person {
         "\(fName) \(lName)"
     }
 }
+
+var usersArray: [Users] = [
+    Users(login: "User", password: "password", person: Person(fName: "John", lName: "Smith")),
+    Users(login: "User2", password: "password2", person: Person(fName: "Eva", lName: "Appleseed")),
+    Users(login: "User3", password: "password3", person: Person(fName: "Anna", lName: "English"))]
