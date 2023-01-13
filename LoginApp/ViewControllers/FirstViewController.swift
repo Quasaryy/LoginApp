@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class FirstViewController: UIViewController {
     
     var user: Users!
     
@@ -81,7 +81,7 @@ class ViewController: UIViewController {
 }
 
 // MARK: Creating func for alert window
-extension ViewController {
+extension FirstViewController {
     func showAlert(title: String, message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let buttonOK = UIAlertAction(title: "OK", style: .default)
@@ -91,7 +91,7 @@ extension ViewController {
 }
 
 // MARK: Working with keyboard in text fields
-extension ViewController: UITextFieldDelegate {
+extension FirstViewController: UITextFieldDelegate {
     // Dissmising keyboard after touching any non text field screen part
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
