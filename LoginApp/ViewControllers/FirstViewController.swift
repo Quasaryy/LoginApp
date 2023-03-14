@@ -28,11 +28,11 @@ class FirstViewController: UIViewController {
     
     // MARK: Prepare segues
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let tabBar = segue.destination as! UITabBarController
-        let dashboardVC = tabBar.viewControllers?.first as! DashboardViewController
-        dashboardVC.user = user
-        let detailsVC = tabBar.viewControllers![1] as! DetailsViewController
-        detailsVC.user = user
+        let tabBar = segue.destination as? UITabBarController
+        let dashboardVC = tabBar?.viewControllers?.first as? DashboardViewController
+        dashboardVC?.user = user
+        let detailsVC = tabBar?.viewControllers?[1] as? DetailsViewController
+        detailsVC?.user = user
     }
 
     // MARK: Forgot password button with alert window
